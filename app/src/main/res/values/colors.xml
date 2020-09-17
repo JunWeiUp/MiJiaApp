@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#387DDE</color>
+    <color name="colorPrimaryDark">#387DDE</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="lineColor">#50B2B2B2</color>
+    <color name="selectorTextColor">#3779E5</color>
+    <color name="unSelectorTextColor">#999999</color>
+    <color name="shadowColor">#30333333</color>
+
+ 
+    <color name="color_222A37">#222A37</color>
+ 
+    <color name="loan_start_color">#999999</color>
+
+</resources>

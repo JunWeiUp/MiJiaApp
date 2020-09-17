@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="selectedFileNum"
+            type="android.databinding.ObservableInt" />
+
+        <variable
+            name="isMiWenOpen"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.disk.fragment.DiskManagerFragment" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_miwen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#50000000"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="@{isOpenSelect.get() &amp;&amp; isMiWenOpen.get() ?View.VISIBLE:View.GONE}">
+
+
+            <TextView
+                android:id="@+id/tv_make_time_ping"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_38"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_radio_back"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="制作时间瓶"
+                android:textColor="#FF3779E5"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_miwen_sure"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_38"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_radio_back"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="确定"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_54"
+            android:layout_alignParentBottom="true"
+            android:background="#3779E5"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp8"
+            android:visibility="@{isOpenSelect.get() &amp;&amp; !isMiWenOpen.get()?View.VISIBLE:View.GONE}">
+
+
+            <TextView
+                android:id="@+id/tv_mingwen_download"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/xiazai_mingwen"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="明文下载"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_move"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/mingwen_yidong"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="移动"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/xiazai_fuzhi"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="复制"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_reset_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/xiazai_chongmingming"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="重命名"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"/>
+
+            <!--android:visibility="@{selectedFileNum.get()>1?View.GONE:View.VISIBLE}"-->
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/xiazai_shanchu"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="删除"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

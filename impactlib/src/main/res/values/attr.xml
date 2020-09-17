@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="dimension"></attr>
+        <attr name="type"/>
+        <attr name="square" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyTitleLayout">
+        <attr name="title_text" format="string"></attr>
+        <attr name="right_text_visible" format="boolean"></attr>
+        <attr name="right_text" format="string"></attr>
+        <attr name="right_drawable" format="reference|integer"/>
+        <attr name="right_drawable_padding" format="dimension"/>
+        <attr name="backImageVisible" format="boolean"/>
+    </declare-styleable>
+</resources>

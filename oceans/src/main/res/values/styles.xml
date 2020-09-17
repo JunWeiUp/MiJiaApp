@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="switchStyle">
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="new_switchStyle">
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:track">@drawable/switch_track</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <declare-styleable name="TopBar">
+        <attr name="leftText" format="string"/>
+        <attr name="centerText" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="hideBack" format="boolean"/>
+        <attr name="is_add_more" format="boolean"></attr>
+        <attr name="right_add_icom" format="reference"></attr>
+        <attr name="rightIcon" format="reference"/>
+        <attr name="centerTextSize" format="integer"/>
+        <attr name="bgColor" format="color"/>
+
+        <attr name="leftIcon" format="reference"/>
+        <attr name="centerTextColor" format="color"/>
+    </declare-styleable>
+
+    <style name="NiceDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DefaultAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/exit_anim</item>
+    </style>
+</resources>

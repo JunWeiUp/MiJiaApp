@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="isMiWenOpen"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="selectedNum"
+            type="android.databinding.ObservableInt" />
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.disk.fragment.DiskManagerHomeFragment" />
+
+        <variable
+            name="sys"
+            type="com.mijia.app.constants.Constants.SysContants" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{handler::onClick}"
+                    android:padding="15dp"
+                    android:text="取消"
+                    android:textColor="#FF3779E5"
+                    android:textSize="14sp"
+                    android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+                <TextView
+                    android:id="@+id/tv_selected_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@{@string/his_order_num(selectedNum.get())}"
+                    android:textColor="#FF222A37"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+                <TextView
+                    android:layout_toLeftOf="@+id/tv_miwen"
+                    android:id="@+id/tv_disk_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{@string/now_floder_path(sys.SelectedMiDun,sys.SelectedDisk)}"
+                    android:textColor="#FF222A37"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="@{isOpenSelect.get()?View.GONE:View.VISIBLE}" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_miwen"
+                    isSelected="@{isMiWenOpen.get()}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/selector_miwen_download_open"
+                    android:drawablePadding="5dp"
+                    android:onClick="@{handler::onClick}"
+                    android:padding="15dp"
+                    android:text="密文下载"
+                    android:textColor="#FF3779E5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_photo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wenjian_zhaopian"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:onClick="@{handler::onClick}"
+                    android:text="照片"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_video"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wenjian_shipin"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:onClick="@{handler::onClick}"
+                    android:text="视频"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_file"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wenjian_wendan"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:onClick="@{handler::onClick}"
+                    android:text="文档"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wenjian_yinpin"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:onClick="@{handler::onClick}"
+                    android:text="音频"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wenjian_qita"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:onClick="@{handler::onClick}"
+                    android:text="其他"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#FFE9EBEF" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/smartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:paddingBottom="50dp"
+                        android:clipToPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+                <include
+                    layout="@layout/layout_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

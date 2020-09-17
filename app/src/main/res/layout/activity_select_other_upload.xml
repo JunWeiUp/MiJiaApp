@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.other.activity.SelectOtherUploadActivity"/> />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/iv_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fanhui"
+                    android:onClick="@{handler.onClick}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="选择文件"
+                    android:textStyle="bold"
+                    android:textColor="#FF222A37"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="全选"
+                    android:padding="10dp"
+                    android:onClick="@{handler.onClick}"
+                    android:textColor="#FF3779E5"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_path"
+                android:paddingLeft="15dp"
+                android:background="#E9EBEF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_floder_location"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="#E9EBEF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="我的密盾 > Disk one"
+                android:textColor="#FF333333"
+                android:textSize="15sp"
+                android:onClick="@{handler.onClick}"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:clipToPadding="false"
+                android:paddingBottom="75dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_black_trans_back"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="选择上传位置"
+                android:textColor="#DDDCDC"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/tv_choice_floder"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_wihte_btn_back">
+
+                    <TextView
+                        android:id="@+id/tv_choice_floder_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/cipan_fenlei_wenjian"
+                        android:text="未选择"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:drawablePadding="5dp"
+                        android:textColor="#FF3779E5"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_blue_radio_btn_back">
+
+                    <TextView
+                        android:id="@+id/tv_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="确定"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

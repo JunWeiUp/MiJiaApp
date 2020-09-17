@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="XIndicator">
+        <attr name="indicatorColor" format="reference|color"/>
+        <attr name="indicatorHeight" format="dimension|reference"/>
+        <attr name="indicatorWidth" format="dimension|reference"/>
+    </declare-styleable>
+
+    <style name="XIndicatorStyle" format="reference"/>
+
+</resources>

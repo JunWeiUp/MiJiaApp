@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextSwitchView">
+        <attr name="textSuject" format="string"/>
+        <attr name="textSubSize" format="dimension"></attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MiJiaApp.iml" filepath="$PROJECT_DIR$/MiJiaApp.iml" group="MiJiaApp" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MiJiaApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" group="MiJiaApp/framework" />
+      <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" group="MiJiaApp/imagepicker" />
+      <module fileurl="file://$PROJECT_DIR$/impactlib/impactlib.iml" filepath="$PROJECT_DIR$/impactlib/impactlib.iml" group="MiJiaApp/impactlib" />
+      <module fileurl="file://$PROJECT_DIR$/lib_fileviewer/lib_fileviewer.iml" filepath="$PROJECT_DIR$/lib_fileviewer/lib_fileviewer.iml" group="MiJiaApp/lib_fileviewer" />
+      <module fileurl="file://$PROJECT_DIR$/oceans/oceans.iml" filepath="$PROJECT_DIR$/oceans/oceans.iml" group="MiJiaApp/oceans" />
+      <module fileurl="file://$PROJECT_DIR$/weekcalendar/weekcalendar.iml" filepath="$PROJECT_DIR$/weekcalendar/weekcalendar.iml" group="MiJiaApp/weekcalendar" />
+    </modules>
+  </component>
+</project>

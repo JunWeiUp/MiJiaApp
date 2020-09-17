@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_item_view"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_file_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/cipan_fenlei_yinpin"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rv_video_pic"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_video_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="3dp"
+            android:text="24:23"
+            android:textColor="#FFFFFFFF"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="拥抱.MP3"
+        android:textColor="#FF333333"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/selector_file_selected_status" />
+</LinearLayout>

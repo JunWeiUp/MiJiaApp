@@ -1,0 +1,387 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:716714342845230726",
+      "lastPropertyId": "3:7795450749717093566",
+      "name": "DiskFileBean",
+      "properties": [
+        {
+          "id": "1:6816619132130405526",
+          "name": "id"
+        },
+        {
+          "id": "2:6271501385666773993",
+          "name": "diskId"
+        },
+        {
+          "id": "3:7795450749717093566",
+          "name": "GsId"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6435009822495600954",
+          "name": "mFileBeans"
+        }
+      ]
+    },
+    {
+      "id": "2:3658961143670071168",
+      "lastPropertyId": "7:4686876917058456330",
+      "name": "DiskInfoBean",
+      "properties": [
+        {
+          "id": "1:9059743495450246648",
+          "name": "id"
+        },
+        {
+          "id": "2:6771472795631853966",
+          "name": "diskName"
+        },
+        {
+          "id": "3:4977268615284686820",
+          "name": "diskSize"
+        },
+        {
+          "id": "4:8834135493678343595",
+          "name": "diskStatu"
+        },
+        {
+          "id": "5:1834827558956866464",
+          "name": "diskInuse"
+        },
+        {
+          "id": "6:5220856240014002767",
+          "name": "diskId"
+        },
+        {
+          "id": "7:4686876917058456330",
+          "name": "diskType"
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:7055239713004635134",
+          "name": "fileInfo"
+        }
+      ]
+    },
+    {
+      "id": "3:5174311706691781184",
+      "lastPropertyId": "15:317790373697476674",
+      "name": "DownRowTaskBean",
+      "properties": [
+        {
+          "id": "1:4211982863765500729",
+          "name": "id"
+        },
+        {
+          "id": "2:1816542145628016121",
+          "name": "fullpath"
+        },
+        {
+          "id": "3:7863747833643876083",
+          "name": "locationPath"
+        },
+        {
+          "id": "4:3836499830242374498",
+          "name": "fileSize"
+        },
+        {
+          "id": "5:5401663720470808413",
+          "name": "currTaskStatus"
+        },
+        {
+          "id": "6:1131782160292671641",
+          "name": "filePointer"
+        },
+        {
+          "id": "7:2562480271290672858",
+          "name": "fileAllNumber"
+        },
+        {
+          "id": "8:4101511855245697751",
+          "name": "filePositionNumber"
+        },
+        {
+          "id": "9:537349656708918222",
+          "name": "userName"
+        },
+        {
+          "id": "10:8226754423036709029",
+          "name": "userId"
+        },
+        {
+          "id": "11:1609902570920738333",
+          "name": "gsName"
+        },
+        {
+          "id": "12:5453577047924718248",
+          "name": "gsId"
+        },
+        {
+          "id": "13:8932424824501652497",
+          "name": "diskName"
+        },
+        {
+          "id": "14:8062765228652671458",
+          "name": "diskId"
+        },
+        {
+          "id": "15:317790373697476674",
+          "name": "finishTime"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:8056514225773424944",
+      "lastPropertyId": "8:6734090680727137546",
+      "name": "FileBean",
+      "properties": [
+        {
+          "id": "1:8353028465439555529",
+          "name": "fileId"
+        },
+        {
+          "id": "2:582144751357368877",
+          "name": "diskId"
+        },
+        {
+          "id": "3:6039186028398855220",
+          "name": "GsId"
+        },
+        {
+          "id": "4:202991011075831648",
+          "name": "size"
+        },
+        {
+          "id": "5:2148083798894141760",
+          "name": "name"
+        },
+        {
+          "id": "6:5549533421713804165",
+          "name": "type"
+        },
+        {
+          "id": "7:4052626819436335369",
+          "name": "isSelected"
+        },
+        {
+          "id": "8:6734090680727137546",
+          "name": "time"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:5328720788499816122",
+      "lastPropertyId": "5:8111161305062422160",
+      "name": "GsInfoBean",
+      "properties": [
+        {
+          "id": "1:1949723856678733835",
+          "name": "id"
+        },
+        {
+          "id": "2:8829834386326975035",
+          "name": "gsStatu"
+        },
+        {
+          "id": "3:2849764627995333273",
+          "name": "gsId"
+        },
+        {
+          "id": "4:5607785304866753481",
+          "name": "gsName"
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:1204622628734046504",
+          "name": "diskInfo"
+        },
+        {
+          "id": "6:135247219634312406",
+          "name": "diskList"
+        }
+      ]
+    },
+    {
+      "id": "6:2913722687934382914",
+      "lastPropertyId": "2:1038376644231319402",
+      "name": "PhotoArrayListBean",
+      "properties": [
+        {
+          "id": "1:3515345926120893071",
+          "name": "id"
+        },
+        {
+          "id": "2:1038376644231319402",
+          "name": "date"
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:4063500189089526036",
+          "name": "mMediaBeans"
+        },
+        {
+          "id": "5:6992076716422620951",
+          "name": "mediaBean"
+        }
+      ]
+    },
+    {
+      "id": "7:6414003632064310811",
+      "lastPropertyId": "2:8824561577668073358",
+      "name": "UploadHistoryBean",
+      "properties": [
+        {
+          "id": "1:8161497954900356433",
+          "name": "id"
+        },
+        {
+          "id": "2:8824561577668073358",
+          "name": "path"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:5965057814229272596",
+      "lastPropertyId": "11:8550594687524139232",
+      "name": "MediaBean",
+      "properties": [
+        {
+          "id": "1:6947591569363825992",
+          "name": "mediaId"
+        },
+        {
+          "id": "2:8505273453376033563",
+          "name": "cusorId"
+        },
+        {
+          "id": "3:5093146806012768338",
+          "name": "date"
+        },
+        {
+          "id": "4:7757754751658964681",
+          "name": "width"
+        },
+        {
+          "id": "5:2675423195916005818",
+          "name": "height"
+        },
+        {
+          "id": "6:1753512175692182046",
+          "name": "path"
+        },
+        {
+          "id": "7:1295357388350146845",
+          "name": "size"
+        },
+        {
+          "id": "8:1902037061331284124",
+          "name": "displayName"
+        },
+        {
+          "id": "9:5447558071131394002",
+          "name": "isSelect"
+        },
+        {
+          "id": "11:8550594687524139232",
+          "name": "upLoadingStatus"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:5947258543704294672",
+      "lastPropertyId": "15:3390475963194091434",
+      "name": "UpRowTaskBean",
+      "properties": [
+        {
+          "id": "1:417476331090858458",
+          "name": "id"
+        },
+        {
+          "id": "2:2338894473390426324",
+          "name": "fullPath"
+        },
+        {
+          "id": "3:8258470637566603284",
+          "name": "locationPath"
+        },
+        {
+          "id": "4:6407745892953680222",
+          "name": "fileSize"
+        },
+        {
+          "id": "5:5532026201473949546",
+          "name": "currTaskStatus"
+        },
+        {
+          "id": "6:7032407752877232424",
+          "name": "filePointer"
+        },
+        {
+          "id": "7:7010108152121327989",
+          "name": "fileAllNumber"
+        },
+        {
+          "id": "8:4325853825572702792",
+          "name": "filePositionNumber"
+        },
+        {
+          "id": "9:757141312505627246",
+          "name": "userName"
+        },
+        {
+          "id": "10:2804967128275069983",
+          "name": "userId"
+        },
+        {
+          "id": "11:1439559527584195917",
+          "name": "gsName"
+        },
+        {
+          "id": "12:1317888654008124358",
+          "name": "gsId"
+        },
+        {
+          "id": "13:4619006520715254435",
+          "name": "diskName"
+        },
+        {
+          "id": "14:707282758622703552",
+          "name": "diskId"
+        },
+        {
+          "id": "15:3390475963194091434",
+          "name": "finishTime"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "9:5947258543704294672",
+  "lastIndexId": "1:7801289906527041461",
+  "lastRelationId": "6:135247219634312406",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    7801289906527041461
+  ],
+  "retiredPropertyUids": [
+    8111161305062422160,
+    6555720847875375760
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

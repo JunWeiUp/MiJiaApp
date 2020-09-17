@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-core-utils:27.1.1'
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../oceans/libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':oceans')
+    implementation 'android.arch.lifecycle:runtime:1.1.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
+    annotationProcessor "android.arch.lifecycle:compiler:+"
+    implementation 'android.arch.lifecycle:viewmodel:1.1.0'
+    // alternatively, just LiveData
+    implementation 'android.arch.lifecycle:livedata:1.1.0'
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+    api 'com.youth.banner:banner:1.4.10'
+
+//    api project(':umeng')
+}

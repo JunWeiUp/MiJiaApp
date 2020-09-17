@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="isMiWenOpen"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.disk.fragment.DiskManagerPhotoFragment" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{handler::onClick}"
+                android:padding="15dp"
+                android:text="取消"
+                android:textColor="#FF3779E5"
+                android:textSize="14sp"
+                android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{handler::onClick}"
+                android:visibility="@{isOpenSelect.get()?View.GONE:View.VISIBLE}"
+                android:padding="15dp"
+                android:src="@drawable/fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:text="图片"
+                android:textColor="#FF222A37"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_miwen"
+                isSelected="@{isMiWenOpen.get()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/selector_miwen_download_open"
+                android:drawablePadding="5dp"
+                android:onClick="@{handler::onClick}"
+                android:padding="15dp"
+                android:text="密文下载"
+                android:textColor="#FF3779E5"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/no_data_view"
+            layout="@layout/layout_no_data"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_top">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_top"
+                android:layout_marginTop="10dp" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</layout>

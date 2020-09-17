@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.trans.fragment.TransferListFragment" />
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="selectedNum"
+            type="android.databinding.ObservableInt" />
+
+        <variable
+            name="selectType"
+            type="android.databinding.ObservableInt" />
+
+        <variable
+            name="sys"
+            type="com.mijia.app.constants.Constants.SysContants" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{handler::onClick}"
+                    android:padding="15dp"
+                    android:text="取消"
+                    android:textColor="#FF3779E5"
+                    android:textSize="14sp"
+                    android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+                <TextView
+                    android:id="@+id/tv_selected_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@{@string/his_order_num(selectedNum.get())}"
+                    android:textColor="#FF222A37"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+                <TextView
+                    android:layout_toLeftOf="@+id/iv_all_select"
+                    android:id="@+id/tv_floder_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="@{@string/now_floder_path(sys.SelectedMiDun,sys.SelectedDisk)}"
+                    android:textColor="#FF222A37"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="@{!isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+                <ImageView
+                    android:id="@+id/iv_all_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="@{handler::onClick}"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/daohang_xuanze"
+                    android:visibility="@{!isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="-200dp"
+                app:tabPaddingBottom="-1dp"
+                app:tabPaddingEnd="-1dp"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingTop="-1dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_black_trans_back"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="@{selectType.get()==1 &amp;&amp; isOpenSelect.get()?View.VISIBLE:View.GONE}">
+
+            <TextView
+                android:id="@+id/delOnlyText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/selector_red_btn_back"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="删除"
+                android:textColor="#FFFFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_black_trans_back"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="@{selectType.get()==2 &amp;&amp; isOpenSelect.get()?View.VISIBLE:View.GONE}">
+
+            <TextView
+                android:id="@+id/delText"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_wihte_btn_back"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="删除"
+                android:textColor="#FFE8321F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shareText"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_radio_btn_back"
+                android:gravity="center"
+                android:onClick="@{handler::onClick}"
+                android:text="分享"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

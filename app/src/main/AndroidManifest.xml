@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mijia.app">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 双击退出程序 -->
+    <uses-permission android:name="android.permission.killBackgroundProcesses" /> <!-- 聊天：收到消息后震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 聊天界面：录制语音,将语音文件保存在手机内存卡，检测是否已经装载文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 后台收到消息的时候，休眠状态唤醒CPU，将消息显示在通知栏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 可选：监听手机重启自动重连服务器 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 环信聊天 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- 华为红点权限 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE " />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <meta-data
+        android:name="android.max_aspect"
+        android:value="2.1" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.activity.YinSiZhengCeActivity"></activity>
+        <activity android:name=".ui.home.activity.FuWuXieYiActivity" />
+        <activity android:name=".ui.home.activity.AboutUsActivitsy" />
+        <activity android:name=".ui.other.activity.WebViewActivity" />
+        <activity
+            android:name=".ui.other.activity.PlayVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.other.activity.PlayMusicActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.other.activity.CreateNewFloaderActivity" />
+        <activity android:name=".ui.other.activity.SelectPhotoArrayActivity" />
+        <activity android:name=".ui.other.activity.SelectPhotoActivity" />
+        <activity android:name=".ui.other.activity.SelectUploadLocationActivity" />
+        <activity android:name=".ui.home.activity.SettingActivity" />
+        <activity android:name=".ui.home.activity.FlowSettingActivity" />
+        <activity android:name=".ui.home.activity.SpaceSettingActivity" />
+        <activity android:name=".AdvertisingActivity" />
+        <activity
+            android:name=".ui.other.activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.other.activity.SelectVoiceVideoFileActivity" />
+        <activity android:name=".ui.other.activity.SelectOtherUploadActivity" />
+        <activity android:name=".ui.other.activity.SelectMiDunActivity" />
+        <activity android:name=".ui.other.activity.SelectDiskActivity" /> <!-- 秘夹服务 -->
+        <service android:name=".service.MiJiaService" />
+
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver> <!-- <receiver android:name=".socket.NetWorkStateReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- //检测网络变化的acton -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.mijia.app"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mijia.app.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_screencapture" />
+        </provider>
+
+        <service
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:label="dexopt"
+            android:process=":dexopt" />
+    </application>
+
+</manifest>

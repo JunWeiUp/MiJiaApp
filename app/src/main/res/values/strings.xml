@@ -1,0 +1,666 @@
+<resources>
+    <string name="app_name">密夹</string>
+    <string name="homepage">首页</string>
+    <string name="disk_manager">磁盘管理</string>
+    <string name="translist">传输列表</string>
+    <string name="backup">备份</string>
+    <string name="his_order_num">已选择%1$s个文件</string>
+    <string name="tab_layout_num">(%1$s)</string>
+    <string name="downloading">正在下载(%1$s)</string>
+    <string name="download_fail">下载失败(%1$s)</string>
+    <string name="download_finish">下载完成(%1$s)</string>
+    <string name="uploading">正在上传(%1$s)</string>
+    <string name="upload_fail">上传失败(%1$s)</string>
+    <string name="upload_finish">上传完成(%1$s)</string>
+    <string name="wait_authorizaiont">待授权(%1$s)</string>
+    <string name="refuse_authorization">拒绝授权(%1$s)</string>
+    <string name="success_authorization">成功授权(%1$s)</string>
+    <string name="now_floder_path">%1$s_%2$s</string>
+    <string name="choice_floder_path">%1$s>%2$s</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+
+    <string name="privacy_policy"><Data><![CDATA[
+<p style="text-align:center">
+    <strong><span style="font-family: 微软雅黑;font-size: 14px"><span style="font-family:微软雅黑">隐私政策</span></span></strong>
+</p>
+<p style="text-indent:28px">
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用您的个人信息。本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本隐私权政策属于本应用服务使用协议不可分割的一部分。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">1. </span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">授权权限</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 在您</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用本应用时，必须要微信授权以确保我们可以为您标识身份并匹配到</span>P</span><span style=";font-family:微软雅黑;font-size:14px">C</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">客户端账号</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">；</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 在您使用</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用时</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，或访问本应用平台网页时，本应用自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的</span>IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(</span><span style=";font-family:微软雅黑;font-size:14px">c) 在您</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用本应用时，需要授权一些功能已保障您能正常使用此</span>A</span><span style=";font-family:微软雅黑;font-size:14px">PP</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，授权信息包括但不限于</span>S</span><span style=";font-family:微软雅黑;font-size:14px">D</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">卡删除与写入权限，通讯录读取、写入和删除权限，拍照及视频权限，录音权限等，获取这部分权限已方便您能更好的管理、加密文件（视频、照片、录音）以及保护通讯录。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">您了解并同意，以下信息不适用本隐私权政策：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 您在使用本应用平台提供的搜索服务时输入的关键字信息；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 违反法律规定或违反本应用规则行为及本应用已对您采取的措施。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">2. 信息使用</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。</span></span><span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">及个人资料</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">3. 信息披露</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 经您事先同意，向第三方披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(d) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(f) 其它本应用根据法律、法规或者网站政策认为合适的披露。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">4. 信息存储</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用中为保护你的个人资料，将所有文件将密文形式保存在您自己的电脑中，本应用不会将您的任何（不包括您的账号信息）个人资料存储在公司的服务器上。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">5. Cookie的使用</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(c) 通过本应用所设cookies所取得的有关信息，将适用本政策。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">6. 信息安全</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) </span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用使用微信快捷登陆，需要调取您的微信授权信息，本应用并不为您单独设立注册入口</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">请您务必不要将微信账号分享给其他人</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">避免个人隐私文件被窃取，我们将尽可能的保护您的账号及个人隐私文件</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">不被滥用和变造。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 在使用本应用</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">时，所有用于加密的隐私文件均保存在您的本地，若您主动删除重要文件及资料，本应用无法为您恢复。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">7.本隐私政策的更改</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用将严格保护您的个人信息安全，并允许您选择该信息的用途。我们的加密技术会保护您的资料以防止其丢失、被误用、受到未授权访问、泄漏、被篡改或毁坏。未经您的允许，您的个人信息永远不会传出本公司。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <br/>
+</p>
+]]></Data></string>
+    <string name="privacy_policy_new"><Data><![CDATA[
+<p style="text-align:center">
+    <strong><span style="font-family: 微软雅黑;font-size: 14px"><span style="font-family:微软雅黑">隐私声明</span></span></strong>
+</p>
+<p style="text-indent:28px">
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用您的个人信息。本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本隐私权政策属于本应用服务使用协议不可分割的一部分。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">1. </span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">授权权限</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 在您</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用本应用时，必须要微信授权以确保我们可以为您标识身份并匹配到</span>P</span><span style=";font-family:微软雅黑;font-size:14px">C</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">客户端账号</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">；</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 在您使用</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用时</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">我们会调取你的一些权限用于密夹的正常使用中，在调取权限过程中获取到的个人隐私信息我们确保不会泄露给任何第三方</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">；</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(</span><span style=";font-family:微软雅黑;font-size:14px">c) 在您</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用本应用时，需要授权一些功能已保障您能正常使用此</span>A</span><span style=";font-family:微软雅黑;font-size:14px">PP</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，授权信息包括但不限于</span>S</span><span style=";font-family:微软雅黑;font-size:14px">D</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">卡删除与写入权限，通讯录读取、写入和删除权限，拍照及视频权限，录音权限等，获取这部分权限已方便您能更好的管理、加密文件（视频、照片、录音）以及保护通讯录。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">您了解并同意，以下信息不适用本隐私权政策：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 您在使用本应用平台提供的搜索服务时输入的关键字信息；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 违反法律规定或违反本应用规则行为及本应用已对您采取的措施。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">2. 信息使用</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。</span></span><span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">及个人资料</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">3. 信息披露</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 经您事先同意，向第三方披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(d) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(f) 其它本应用根据法律、法规或者网站政策认为合适的披露。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">4. 信息存储</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用中为保护你的个人资料，将所有文件将密文形式保存在您自己的电脑中，本应用不会将您的任何（不包括您的账号信息）个人资料存储在公司的服务器上。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">5. Cookie的使用</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(c) 通过本应用所设cookies所取得的有关信息，将适用本政策。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">6. 信息安全</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) </span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用使用微信快捷登陆，需要调取您的微信授权信息，本应用并不为您单独设立注册入口</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">。</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">请您务必不要将微信账号分享给其他人</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">，</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">避免个人隐私文件被窃取，我们将尽可能的保护您的账号及个人隐私文件</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">不被滥用和变造。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 在使用本应用</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">时，所有用于加密的隐私文件均保存在您的本地，若您主动删除重要文件及资料，本应用无法为您恢复。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">7.本隐私政策的更改</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(a) 如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">(b) 本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">8</span><span style=";font-family:微软雅黑;font-size:14px">.APP</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">运营者信息</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;<span style="font-family:微软雅黑">密夹</span>A</span><span style=";font-family:微软雅黑;font-size:14px">PP</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">由北京国科环宇科技股份有限公司运营，公司注册为北京市海淀区知春路</span>6</span><span style=";font-family:微软雅黑;font-size:14px">3</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">号北京卫星制造厂</span>5</span><span style=";font-family:微软雅黑;font-size:14px">1</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">号楼（卫星大厦）</span>1</span><span style=";font-family:微软雅黑;font-size:14px">6</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">层。常用办公地址为：北京市海淀区卫星大厦</span>1</span><span style=";font-family:微软雅黑;font-size:14px">6</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">层。信息保护负责人电话号为</span>1</span><span style=";font-family:微软雅黑;font-size:14px">8600862064.</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用将严格保护您的个人信息安全，并允许您选择该信息的用途。我们的加密技术会保护您的资料以防止其丢失、被误用、受到未授权访问、泄漏、被篡改或毁坏。未经您的允许，您的个人信息永远不会传出本公司。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <br/>
+</p>
+]]></Data></string>
+
+
+    <string name="terms_of_user_new">
+
+        <Data>
+
+            <![CDATA[
+<p style="text-align:center">
+    <strong><span style="font-family: 微软雅黑;font-size: 14px"><span style="font-family:微软雅黑">个人信息保护说明</span></span></strong>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">重要须知：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本协议是您与本应用的开发者之间关于开发者向您提供本应用所涉相关服务的法律协议。在此特别提醒，您欲使用相关服务，必须事先认真阅读本服务条款中各条款，包括免除或者限制开发者责任的免责条款及对用户的权利限制。请您审阅并接受或不接受本服务条款（未成年人审阅时应得到法定监护人的陪同）。本服务条款一旦发生变更</span></span><span style=";font-family:微软雅黑;font-size:14px">,将在网页上公布修改内容。修改后的服务条款一旦在网页上公布即有效代替原来的服</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">务条款。您可随时登陆网页查阅最新版服务条款。您若不同意对服务条款的修改，您应不使用或主动取消相关服务，否则，您的任何对相关服务的登陆、查看等使用行为将被视为您对相关修改和本协议的理解和接受。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">如果您选择接受本协议开通服务，即表示您同意接受协议各项条件的约束。如果您不同意本</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">服务条款，则不能获得使用本服务的权利。您若有违反本条款的任何规定，开发者有权随时</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">中止或终止您服务的使用资格并保留追究相关法律责任的权利。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">* 如无特别说明，下列术语在本协议中的含义为：</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">开发者：指经有效申请并经过腾讯公司同意，将其开发的或有权的各种应用接入基于腾讯社</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">区开放平台而向用户提供各种服务的，具备民事行为能力的个人、法人或其他组织。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">应用：指由开发者开发的可向用户提供各种服务的应用程序，包括但不限于游戏类服务、</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">工具类服务、电子商务类服务、视频或音乐类服务等现存的各种服务及今后可能出现的各种</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">服务。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">1</span><span style=";font-family:微软雅黑;font-size:14px">.</span><span style=";font-family:等线;font-size:14px">&nbsp;</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用及服务由北京国科环宇科技股份有限公司开发，受中华人民共和国版权法及国际版权条约和其他知识产权法及条约的保护。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">2. 用户在遵守法律及本条款的前提下可依本协议使用应用及享受服务，但用户无权实施包括</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">但不限于下列行为：</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.1删除应用及其他副本上所有关于版权的信息、内容；</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.2对应用进行反向工程、反向汇编、反向编译等；</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.3对于应用中相关信息等，未经**书面同意，用户不得擅自实施包括但不限于下列行为：</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用、复制、修改、链接、转载、汇编、发表、出版，建立镜像站点、擅自借助</span>“软件”发</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">展与之有关的衍生产品、作品等。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.4利用应用及服务发表、传送、传播、储存危害国家安全、祖国统一、社会稳定的内容，</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">或侮辱诽谤、色情、暴力、引起他人不安及任何违反国家法律法规政策的内容。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.5利用发表、传送、传播、储存侵害他人知识产权、商业机密权等合法权利的内容。</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.6进行任何危害计算机网络安全的行为，包括但不限于：使用未经许可的数据或进入未经</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">许可的服务器</span></span><span style=";font-family:微软雅黑;font-size:14px">/帐户；未经允许进入公众计算机网络或者他人计算机系统并删除、修改、增</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">加存储信息；未经许可，企图探查、扫描、测试本</span>“软件”系统或网络的弱点或其它实施破坏网络安全的行为；企图干涉、破坏本“软件”系统或网站的正常运行，故意传播恶意程</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">序或病毒以及其他破坏干扰正常网络信息服务的行为；伪造</span></span><span style=";font-family:微软雅黑;font-size:14px">&nbsp;TCP/IP数据包名称或部分名称。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">3. 用户须明白，使用本服务产品涉及到互联网服务，可能会受到各个环节不稳定因素的影</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">响。因此服务存在不可抗力、计算机病毒或黑客攻击、系统不稳定、用户所在位置、用户关</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">机以及其他任何技术、互联网络、通信线路原因等造成的服务中断或不能满足用户要求的风</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">险。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">4. 用户须明白，在使用本服务产品存在有来自任何他人的包括威胁性的、诽谤性的、令人</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">反感的或非法的内容或行为或对他人权利的侵犯（包括知识产权）的匿名或冒名的信息的风</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">险，用户须承担以上风险，开发者对服务不作任何类型的担保，不论是明确的或隐含的，包</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">括所有有关信息真实性、适商性、适于某一特定用途、所有权和非侵权性的默示担保和条件，</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">对因此导致任何因用户不正当或非法使用服务产生的直接、间接、偶然、特殊及后续的损害，</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">不承担任何责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">5．使用本服务必须遵守国家有关法律和政策等，维护国家利益，保护国家安全，并遵守本</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">条款，对于用户违法或违反本协议的使用</span></span><span style=";font-family:微软雅黑;font-size:14px">(包括但不限于言论发表、传送等)而引起的一切责</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">任，由用户负全部责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">6．尊重用户个人隐私信息的私有性是本应用及服务的原则，开发者将会采取合理的措施保</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">护用户的个人隐私信息，除法律或有法律赋予权限的政府部门要求或用户同意等原因外，未</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">经用户同意不向第三方公开、透露用户个人隐私信息。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">7. 特别提醒用户，使用互联网必须遵守国家有关的政策和法律，如刑法、国家安全法、保</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">密法、计算机信息系统安全保护条例等，保护国家利益，保护国家安全，对于违法使用互联</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">网络而引起的一切责任，由用户负全部责任。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.1.用户不得使用本应用及服务发送或传播任何妨碍社会治安或非法、虚假、骚扰性、侮辱</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">性、恐吓性、伤害性、破坏性、挑衅性、淫秽色情性等内容的信息。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.2.用户不得使用本应用及服务发送或传播敏感信息和违反国家法律制度的信息。</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.3.本应用及服务同大多数因特网产品一样，易受到各种安全问题的困扰，包括但不限于：</span>
+</p>
+<p style="text-indent:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">1）透露详细个人资料，被不法分子利用，造成现实生活中的骚扰。</span>
+</p>
+<p style="margin-left:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">2）哄骗、破译密码。</span>
+</p>
+<p style="margin-left:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">3）下载安装的其它软件中含有“特洛伊木马”等病毒，威胁到个人计算计上信息和数据的</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">安全，继而威胁对本应用及服务的使用。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">8. 请用户注意勿在使用本应用及服务中透露自己的各类财产帐户、银行卡、信用卡、QQ号</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">码及对应密码等重要资料，否则由此带来的任何损失由用户自行承担。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">9. 用户应规范、合法地使用本应用及服务，如用户有在公共环境下捣乱、骚扰、欺骗其他</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">用户等行为或者实施其他违反本协议的行为，一经发现，开发者有权停止服务。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">10. 用户须明白，开发者为了本应用整体运营的需要，在经腾讯公司许可后，开发者拥有随</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">时修改或中断、中止或终止服务而不需通知您的权利，开发者行使前述权利不需对您或任何</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">第三方负责或承担任何赔偿责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">11. 用户须明白，本应用及相关服务由开发者向用户提供，腾讯公司仅提供本应用的运营平</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">台，基于本应用的用户与开发者之间发生的任何纠纷由开发者与用户协商解决，相关责任和赔偿由开发者单独承担，与腾讯公司无关，用户无权向腾讯公司主张任何权利和赔偿。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">12. 本服务条款的解释，效力及纠纷的解决，适用于中华人民共和国大陆法律。若发生任何</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">纠纷或争议，应当友好协商解决，协商不成的，均应提交北京市海淀</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">区人民法院解决。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <br/>
+</p>
+]]>
+
+        </Data>
+
+    </string>
+
+
+    <string name="terms_of_user">
+
+        <Data>
+
+            <![CDATA[
+<p style="text-align:center">
+    <strong><span style="font-family: 微软雅黑;font-size: 14px"><span style="font-family:微软雅黑">用户服务协议</span></span></strong>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">重要须知：</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本协议是您与本应用的开发者之间关于开发者向您提供本应用所涉相关服务的法律协议。在此特别提醒，您欲使用相关服务，必须事先认真阅读本服务条款中各条款，包括免除或者限制开发者责任的免责条款及对用户的权利限制。请您审阅并接受或不接受本服务条款（未成年人审阅时应得到法定监护人的陪同）。本服务条款一旦发生变更</span></span><span style=";font-family:微软雅黑;font-size:14px">,将在网页上公布修改内容。修改后的服务条款一旦在网页上公布即有效代替原来的服</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">务条款。您可随时登陆网页查阅最新版服务条款。您若不同意对服务条款的修改，您应不使用或主动取消相关服务，否则，您的任何对相关服务的登陆、查看等使用行为将被视为您对相关修改和本协议的理解和接受。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">如果您选择接受本协议开通服务，即表示您同意接受协议各项条件的约束。如果您不同意本</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">服务条款，则不能获得使用本服务的权利。您若有违反本条款的任何规定，开发者有权随时</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">中止或终止您服务的使用资格并保留追究相关法律责任的权利。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">* 如无特别说明，下列术语在本协议中的含义为：</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">开发者：指经有效申请并经过腾讯公司同意，将其开发的或有权的各种应用接入基于腾讯社</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">区开放平台而向用户提供各种服务的，具备民事行为能力的个人、法人或其他组织。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">应用：指由开发者开发的可向用户提供各种服务的应用程序，包括但不限于游戏类服务、</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">工具类服务、电子商务类服务、视频或音乐类服务等现存的各种服务及今后可能出现的各种</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">服务。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">1</span><span style=";font-family:微软雅黑;font-size:14px">.</span><span style=";font-family:等线;font-size:14px">&nbsp;</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">本应用及服务由北京国科环宇科技股份有限公司开发，受中华人民共和国版权法及国际版权条约和其他知识产权法及条约的保护。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">2. 用户在遵守法律及本条款的前提下可依本协议使用应用及享受服务，但用户无权实施包括</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">但不限于下列行为：</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.1删除应用及其他副本上所有关于版权的信息、内容；</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.2对应用进行反向工程、反向汇编、反向编译等；</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.3对于应用中相关信息等，未经**书面同意，用户不得擅自实施包括但不限于下列行为：</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">使用、复制、修改、链接、转载、汇编、发表、出版，建立镜像站点、擅自借助</span>“软件”发</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">展与之有关的衍生产品、作品等。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.4利用应用及服务发表、传送、传播、储存危害国家安全、祖国统一、社会稳定的内容，</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">或侮辱诽谤、色情、暴力、引起他人不安及任何违反国家法律法规政策的内容。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.5利用发表、传送、传播、储存侵害他人知识产权、商业机密权等合法权利的内容。</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">2.6进行任何危害计算机网络安全的行为，包括但不限于：使用未经许可的数据或进入未经</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">许可的服务器</span></span><span style=";font-family:微软雅黑;font-size:14px">/帐户；未经允许进入公众计算机网络或者他人计算机系统并删除、修改、增</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">加存储信息；未经许可，企图探查、扫描、测试本</span>“软件”系统或网络的弱点或其它实施破坏网络安全的行为；企图干涉、破坏本“软件”系统或网站的正常运行，故意传播恶意程</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">序或病毒以及其他破坏干扰正常网络信息服务的行为；伪造</span></span><span style=";font-family:微软雅黑;font-size:14px">&nbsp;TCP/IP数据包名称或部分名称。</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">3. 用户须明白，使用本服务产品涉及到互联网服务，可能会受到各个环节不稳定因素的影</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">响。因此服务存在不可抗力、计算机病毒或黑客攻击、系统不稳定、用户所在位置、用户关</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">机以及其他任何技术、互联网络、通信线路原因等造成的服务中断或不能满足用户要求的风</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">险。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">4. 用户须明白，在使用本服务产品存在有来自任何他人的包括威胁性的、诽谤性的、令人</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">反感的或非法的内容或行为或对他人权利的侵犯（包括知识产权）的匿名或冒名的信息的风</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">险，用户须承担以上风险，开发者对服务不作任何类型的担保，不论是明确的或隐含的，包</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">括所有有关信息真实性、适商性、适于某一特定用途、所有权和非侵权性的默示担保和条件，</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">对因此导致任何因用户不正当或非法使用服务产生的直接、间接、偶然、特殊及后续的损害，</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">不承担任何责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">5．使用本服务必须遵守国家有关法律和政策等，维护国家利益，保护国家安全，并遵守本</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">条款，对于用户违法或违反本协议的使用</span></span><span style=";font-family:微软雅黑;font-size:14px">(包括但不限于言论发表、传送等)而引起的一切责</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">任，由用户负全部责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">6．尊重用户个人隐私信息的私有性是本应用及服务的原则，开发者将会采取合理的措施保</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">护用户的个人隐私信息，除法律或有法律赋予权限的政府部门要求或用户同意等原因外，未</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">经用户同意不向第三方公开、透露用户个人隐私信息。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">7. 特别提醒用户，使用互联网必须遵守国家有关的政策和法律，如刑法、国家安全法、保</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">密法、计算机信息系统安全保护条例等，保护国家利益，保护国家安全，对于违法使用互联</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">网络而引起的一切责任，由用户负全部责任。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.1.用户不得使用本应用及服务发送或传播任何妨碍社会治安或非法、虚假、骚扰性、侮辱</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">性、恐吓性、伤害性、破坏性、挑衅性、淫秽色情性等内容的信息。</span></span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.2.用户不得使用本应用及服务发送或传播敏感信息和违反国家法律制度的信息。</span>
+</p>
+<p style="text-indent:14px">
+    <span style=";font-family:微软雅黑;font-size:14px">7.3.本应用及服务同大多数因特网产品一样，易受到各种安全问题的困扰，包括但不限于：</span>
+</p>
+<p style="text-indent:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">1）透露详细个人资料，被不法分子利用，造成现实生活中的骚扰。</span>
+</p>
+<p style="margin-left:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">2）哄骗、破译密码。</span>
+</p>
+<p style="margin-left:28px">
+    <span style=";font-family:微软雅黑;font-size:14px">3）下载安装的其它软件中含有“特洛伊木马”等病毒，威胁到个人计算计上信息和数据的</span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">安全，继而威胁对本应用及服务的使用。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">8. 请用户注意勿在使用本应用及服务中透露自己的各类财产帐户、银行卡、信用卡、QQ号</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">码及对应密码等重要资料，否则由此带来的任何损失由用户自行承担。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">9. 用户应规范、合法地使用本应用及服务，如用户有在公共环境下捣乱、骚扰、欺骗其他</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">用户等行为或者实施其他违反本协议的行为，一经发现，开发者有权停止服务。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">10. 用户须明白，开发者为了本应用整体运营的需要，在经腾讯公司许可后，开发者拥有随</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">时修改或中断、中止或终止服务而不需通知您的权利，开发者行使前述权利不需对您或任何</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">第三方负责或承担任何赔偿责任。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">11. 用户须明白，本应用及相关服务由开发者向用户提供，腾讯公司仅提供本应用的运营平</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">台，基于本应用的用户与开发者之间发生的任何纠纷由开发者与用户协商解决，相关责任和赔偿由开发者单独承担，与腾讯公司无关，用户无权向腾讯公司主张任何权利和赔偿。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">12. 本服务条款的解释，效力及纠纷的解决，适用于中华人民共和国大陆法律。若发生任何</span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">纠纷或争议，应当友好协商解决，协商不成的，均应提交北京市海淀</span></span><span style=";font-family:微软雅黑;font-size:14px"><span style="font-family:微软雅黑">区人民法院解决。</span></span>
+</p>
+<p>
+    <span style=";font-family:微软雅黑;font-size:14px">&nbsp;</span>
+</p>
+<p>
+    <br/>
+</p>
+]]>
+
+        </Data>
+
+    </string>
+    <string name="privacy_policy_tilte">用户服务协议</string>
+    <string name="terms_of_use_title">隐私政策</string>
+
+    <string name="privacy_policy_tilte_new">个人信息保护声明</string>
+    <string name="terms_of_use_title_new">隐私声明</string>
+    <string name="agree_and_continue">同意并继续</string>
+</resources>

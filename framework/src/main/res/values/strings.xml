@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">framework</string>
+
+    <string name="digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,.;:"-=_+?`~!@#$￥%^*()&quot;&amp;&lt;&gt;[]{}（）【】。，、：；’"</string>
+    <string name="login_status_invalid">登录状态已失效</string>
+    <string name="account_freeze">账号被冻结</string>
+
+</resources>

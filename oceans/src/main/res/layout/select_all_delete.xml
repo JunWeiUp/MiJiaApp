@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:id="@+id/rl_select_all"
+        android:background="@drawable/sel_click"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:duplicateParentState="true"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/sel_select"
+            android:text="全选"
+            android:paddingLeft="@dimen/page_padding"
+            android:drawablePadding="@dimen/dp10"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:text="删除"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/sel_delete"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+</LinearLayout>

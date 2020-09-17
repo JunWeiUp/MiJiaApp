@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CellLayout">
+        <!--是否是正方形模式-->
+        <attr name="isSquareCell" format="boolean" />
+        <!--各自之间的间隙-->
+        <attr name="cellSpcing" format="dimension" />
+        <!--列数-->
+        <attr name="columCount" format="integer" />
+    </declare-styleable>
+</resources>

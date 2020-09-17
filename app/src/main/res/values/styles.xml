@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <!--项目类型-->
+    <string-array name="tab_strings">
+        <item>未上传</item>
+        <item>全部</item>
+    </string-array>
+
+    <!--传输列表-->
+    <string-array name="tab_trans_strings">
+        <item>下载列表</item>
+        <item>上传列表</item>
+        <item>授权列表</item>
+    </string-array>
+</resources>

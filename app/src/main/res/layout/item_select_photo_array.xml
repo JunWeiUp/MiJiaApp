@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_photo_array_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019年3月"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_photo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/enter"
+            android:text="68张"
+            android:textColor="#FF3779E5"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.nevermore.oceans.widget.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:fixFlag="width"
+            app:heightSize="1"
+            app:widthSize="1">
+
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+
+        </com.nevermore.oceans.widget.PercentRelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <com.nevermore.oceans.widget.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:fixFlag="width"
+            app:heightSize="1"
+            app:widthSize="1">
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+
+        </com.nevermore.oceans.widget.PercentRelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <com.nevermore.oceans.widget.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:fixFlag="width"
+            app:heightSize="1"
+            app:widthSize="1">
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+
+        </com.nevermore.oceans.widget.PercentRelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <com.nevermore.oceans.widget.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:fixFlag="width"
+            app:heightSize="1"
+            app:widthSize="1">
+
+            <ImageView
+                android:id="@+id/iv_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+
+        </com.nevermore.oceans.widget.PercentRelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

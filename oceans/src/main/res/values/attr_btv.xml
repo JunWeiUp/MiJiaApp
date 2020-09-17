@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomTabView">
+        <attr name="tabIconNormal" format="reference"/>
+        <attr name="tabIconSelected" format="reference"/>
+        <attr name="tabTextColorNormal" format="color"/>
+        <attr name="tabTextColorSelected" format="color"/>
+        <attr name="tabText" format="string"/>
+        <attr name="tabTextSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

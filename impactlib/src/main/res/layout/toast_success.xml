@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rect_blact_8_radius"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_below="@+id/iv_right"
+        android:textColor="#fcfcfc"
+        android:text="取消成功"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

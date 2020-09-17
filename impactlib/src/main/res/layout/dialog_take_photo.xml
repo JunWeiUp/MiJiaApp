@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_out"
+    android:layout_width="match_parent"
+    android:minWidth="10000dp"
+    android:showDividers="middle"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:divider="@drawable/divider_match_parent"
+    android:background="@drawable/rect_6_radius"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_take"
+        android:text="拍摄"
+        style="@style/textSelStyle" />
+    <TextView
+        android:id="@+id/tv_album"
+        android:text="从相册选择"
+        style="@style/textSelStyle" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:text="取消"
+        style="@style/textSelStyle" />
+</LinearLayout>

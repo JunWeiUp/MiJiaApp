@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_btn_one"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="选项三"
+            android:textColor="#FF333333"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="#FFEEEEEE" />
+
+        <TextView
+            android:id="@+id/tv_btn_two"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="选项三"
+            android:textColor="#FF333333"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="#FFEEEEEE" />
+
+        <TextView
+            android:id="@+id/tv_btn_three"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="选项三"
+            android:textColor="#FF333333"
+            android:textSize="18sp" />
+
+
+        <View
+            android:id="@+id/line_three"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#FFF5F5F5" />
+
+        <TextView
+            android:id="@+id/tv_btn_cancel"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="取消"
+            android:textColor="#FF333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</layout>

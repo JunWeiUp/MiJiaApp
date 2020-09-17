@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="handler"
+            type="com.mijia.app.ui.trans.fragment.TranferAuthorizationFragment" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFE9EBEF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="文件下载至："
+                android:textColor="#FF333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_download_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地的下载地址"
+                android:textColor="#FF333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/smartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_wait_authorization"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{handler.onClick}"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                isSelected="@{handler.isWaitAuthorizationOpen.get()}"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/selector_list_open"
+                                android:drawablePadding="5dp"
+                                android:padding="12dp"
+                                android:text="@{@string/wait_authorizaiont(handler.waitAuthorizationNum.get())}"
+                                android:textColor="#FF333333"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_all_select_wait"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:onClick="@{handler.onClick}"
+                                android:padding="12dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/selector_all_select_btn"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_wait_authorization"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="@{handler.isWaitAuthorizationOpen.get()?View.VISIBLE:View.GONE}" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_refuse_authorization"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{handler.onClick}"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                isSelected="@{handler.isRefuseAtuorizationOpen.get()}"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/selector_list_open"
+                                android:drawablePadding="5dp"
+                                android:padding="12dp"
+                                android:text="@{@string/refuse_authorization(handler.refuseAuthorizationNum.get())}"
+                                android:textColor="#FF333333"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_all_select_refuse"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:onClick="@{handler.onClick}"
+                                android:padding="12dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/selector_all_select_btn"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_refuse_authorization"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="@{handler.isRefuseAtuorizationOpen.get()?View.VISIBLE:View.GONE}" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_success_authorization"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{handler.onClick}"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                isSelected="@{handler.isSuccessAtuorizationOpen.get()}"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/selector_list_open"
+                                android:drawablePadding="5dp"
+                                android:padding="12dp"
+                                android:text="@{@string/success_authorization(handler.successAuthorizationNum.get())}"
+                                android:textColor="#FF333333"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_all_select_success"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:onClick="@{handler.onClick}"
+                                android:padding="12dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/selector_all_select_btn"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_success_authorization"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingBottom="50dp"
+                            android:visibility="@{handler.isSuccessAtuorizationOpen.get()?View.VISIBLE:View.GONE}" />
+
+                    </LinearLayout>
+
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <!--</LinearLayout>-->
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+    </LinearLayout>
+
+</layout>

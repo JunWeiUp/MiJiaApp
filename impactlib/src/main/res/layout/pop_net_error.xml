@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/rect_black_8_radius"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:paddingLeft="20dp"
+        android:src="@mipmap/em_login_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/tv_info"
+        android:text="暂无网络"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

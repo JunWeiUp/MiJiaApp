@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="isOpenSelect"
+            type="android.databinding.ObservableBoolean" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFE9EBEF"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/downAddressLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="#FFE9EBEF"
+                android:gravity="center_vertical"
+                android:onClick="@{v -> listener.onClick(v)}"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="文件下载至："
+                    android:textColor="#FF333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_download_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{v -> listener.onClick(v)}"
+                    android:text="本地的下载地址"
+                    android:singleLine="true"
+                    android:textColor="#FF333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/downLoadingExpandLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:onClick="@{v -> listener.onClick(v)}"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/loadingNumberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/selector_list_open"
+                        android:drawablePadding="5dp"
+                        android:textColor="#FF333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/downLoadingAllPauseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{v -> listener.onClick(v)}"
+                        android:padding="12dp"
+                        android:text="全部开始"
+                        android:textColor="#FF3779E5"
+                        android:textSize="15sp"
+                        android:visibility="@{isOpenSelect.get()?View.GONE:View.VISIBLE}" />
+
+                    <ImageView
+                        android:id="@+id/iv_all_select_downloading"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:onClick="@{v -> listener.onClick(v)}"
+                        android:padding="12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selector_all_select_btn"
+                        android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/downLoadingList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <LinearLayout
+                    android:id="@+id/ll_download_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:onClick="@{v -> listener.onClick(v)}"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/errorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/selector_list_open"
+                        android:drawablePadding="5dp"
+                        android:textColor="#FF333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/retryAllText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{v -> listener.onClick(v)}"
+                        android:padding="12dp"
+                        android:text="全部重试"
+                        android:textColor="#FF3779E5"
+                        android:textSize="15sp"
+                        android:visibility="@{isOpenSelect.get()?View.GONE:View.VISIBLE}" />
+
+                    <ImageView
+                        android:id="@+id/iv_all_select_fail"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:onClick="@{v -> listener.onClick(v)}"
+                        android:padding="12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selector_all_select_btn"
+                        android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_download_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_download_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:onClick="@{v -> listener.onClick(v)}"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/downFinishNumberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/selector_list_open"
+                        android:drawablePadding="5dp"
+                        android:textColor="#FF333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:textColor="#FF3779E5"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_all_select_finish"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:onClick="@{v -> listener.onClick(v)}"
+                        android:padding="12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selector_all_select_btn"
+                        android:visibility="@{isOpenSelect.get()?View.VISIBLE:View.GONE}" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_download_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="50dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
