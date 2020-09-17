@@ -2,6 +2,9 @@ package com.mijia.app.bean;
 
 import com.handong.framework.base.BaseBean;
 
+/**
+ * 12312312312312313
+ */
 public class AdvertisementBean extends BaseBean {
 
 
